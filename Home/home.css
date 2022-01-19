@@ -1,0 +1,144 @@
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0b0c1b;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 55px;
+    padding: 15px 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0b0c1b;
+    
+  }
+  
+  @media (max-width: 600px) {
+    header {
+      flex-wrap: wrap;
+    }
+  }
+  #page-wrapper {
+    position: relative;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /** global classes styling **/
+  
+  .container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+  }
+.logo{
+    color: rgb(50, 210, 238);
+    padding-bottom: 15px;
+} 
+nav > ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  nav li{
+      padding-bottom: 15px;
+  } 
+  nav li a:hover{
+    color: #3be5ed;
+  }
+ 
+ img{
+   
+    height: 300px;
+   
+}
+
+#content{
+    display: flex;
+    padding: 150px 0px;
+    height: 100hv;
+    justify-content: center;
+}
+h2>p{
+  font-size: 22px;
+}
+.begin{
+  color: white;
+  display: flex;
+  padding: 20px 20px;
+ 
+  top: 0;
+  min-height: 55px;
+  padding: 0px 20px;
+ 
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.begin .text{
+
+    margin-top: 0;
+    width: 400px;
+    padding-left: 20px;
+    padding-top: 100px;
+    border: 400px 200px;
+}
+.begin .text h2{
+  font-size: 2.5em;
+}
+.begin .image{
+   float: right;
+  padding-top: 50px;
+  margin-right: 0px;
+
+}
+#content .infor{
+
+ justify-content: space-between;
+ margin-top: 45px;
+ margin-left: -50px
+}
+.infor >li> a{
+  width: 35vw;
+    display: flex;
+   
+   
+}
+.btn{
+  text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.text-content{
+  line-height: 50px;
+  border-radius: 50px;
+  border-style: solid;
+  border-width: medium;
+  border-color: #3be5ed;
+  background-color: #0b0c1b;
+  font-size: 20px;
+  padding: 0px 20px;
+}
+.text-content:hover {
+  background-color: #3be5ed;
+  color:black;
+}
+.text-content a:hover{
+  color:black;
+}
