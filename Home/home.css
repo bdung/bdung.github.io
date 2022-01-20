@@ -120,25 +120,102 @@ h2>p{
    
    
 }
+
 .btn{
   text-transform: uppercase;
     border-radius: 4px;
     cursor: pointer;
+  width: 500px;
 }
 .text-content{
-  line-height: 50px;
+  line-height: 45px;
+  width: 220px;
+ 
+  font-size: 20px;
+  padding: 0px 0px;
+ 
+}
+.borders{
   border-radius: 50px;
   border-style: solid;
   border-width: medium;
   border-color: #3be5ed;
   background-color: #0b0c1b;
-  font-size: 20px;
-  padding: 0px 20px;
 }
-.text-content:hover {
+.borders:hover{
   background-color: #3be5ed;
   color:black;
 }
 .text-content a:hover{
   color:black;
+}
+.dialog{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition:opacity linear 0.2s;
+}
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(252, 255, 251, 0.2);
+  
+}
+.dialog:target{
+  visibility: visible;
+  opacity: 1;
+}
+.dialog-body{
+  max-width: 600px;
+  position: relative;
+  padding: 16px;
+  width: 600px;
+  height: 300px;
+  background-color: rgb(1, 38, 41);
+  color: #0b0c1b;
+  border-radius: 25px;
+  border-style: solid;
+  border-width: medium;
+  box-shadow: seashell;
+  align-items: center;
+  justify-content: center;
+  
+}
+.dialog-close-btn{
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  text-decoration: none;
+  color: #333;
+}
+.overlay-close{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+.contract-me{
+padding: 20px 0px 40px;
+text-align: center;
+color: aqua;
+
+}
+.inf{
+  align-items: center;
+  margin-left: 50px;
+  
+}
+.space{
+  margin: 5px 5px;
 }
