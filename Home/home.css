@@ -18,7 +18,7 @@ header {
     justify-content: space-around;
     align-items: center;
     background-color: #0b0c1b;
-    
+    z-index: 11;
   }
   
   @media (max-width: 600px) {
@@ -122,7 +122,7 @@ h2>p{
 }
 
 .btn{
-  text-transform: uppercase;
+  
     border-radius: 4px;
     cursor: pointer;
   width: 500px;
@@ -149,6 +149,10 @@ h2>p{
 .text-content a:hover{
   color:black;
 }
+.con-inf{
+  text-align: center;
+  color: black;
+}
 .dialog{
   position: fixed;
   top: 0;
@@ -169,7 +173,7 @@ h2>p{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(252, 255, 251, 0.2);
+  background-color: rgba(19, 114, 109, 0.5);
   
 }
 .dialog:target{
@@ -182,12 +186,12 @@ h2>p{
   padding: 16px;
   width: 600px;
   height: 300px;
-  background-color: rgb(1, 38, 41);
-  color: #0b0c1b;
+  background-color: rgb(167, 235, 241);
+  
   border-radius: 25px;
   border-style: solid;
   border-width: medium;
-  box-shadow: seashell;
+  box-shadow: 0 3px 12px 0 rgba(150, 240, 240, 0.2), 0 6px 20px 0 rgba(209, 250, 252, 0.19);
   align-items: center;
   justify-content: center;
   
@@ -196,9 +200,18 @@ h2>p{
   position: absolute;
   top: 4px;
   right: 10px;
+  width: 15px;
+  height: 15px;
   text-decoration: none;
-  color: #333;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  color: rgb(18, 20, 20);
 }
+.dialog-close-btn:hover{
+  background-color: skyblue;
+}
+
 .overlay-close{
   position: absolute;
   width: 100%;
@@ -214,8 +227,32 @@ color: aqua;
 .inf{
   align-items: center;
   margin-left: 50px;
+  margin-top: 60px;
   
 }
 .space{
   margin: 5px 5px;
+}
+
+span{
+  position: relative;
+  color: white;
+  display: block;
+  
+}
+#nav .borders:hover{
+  background-color: #3be5ed;
+  color:black;
+}
+#nav p {
+  color: #0b0c1b;
+  display: none;
+}
+#nav span:hover +p{
+display: block;
+}
+@media (hover: hover) {
+  span:hover  {
+    display: none;
+  }
 }
